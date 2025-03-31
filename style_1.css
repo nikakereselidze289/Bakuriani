@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+}
+
+.intro-section {
+  background-color: black;
+  color: aqua;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.intro-text h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.intro-button {
+  padding: 20px 40px;
+  font-size: 20px;
+  background-color: #ffd700;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.intro-button:hover {
+  background-color: #ffcc00;
+}
+
+.details-section h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+/* აქ დავამათე ფუტერის ფერი */
+footer {
+  background-color: #1a1a1a;
+  color: aqua;
+  text-align: center;
+  padding: 30 px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

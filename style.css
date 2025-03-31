@@ -1,8 +1,14 @@
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
 body {
@@ -25,11 +31,13 @@ header .logo img {
   width: 220px;
   border-radius: 15px;
   transition: transform 0.3s ease-in-out;
+  padding: 10px;
   border: 3px solid #ffd700;
 }
 
 header .logo img:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 nav ul {
@@ -38,6 +46,8 @@ nav ul {
   margin: 20px 0;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 nav ul li {
@@ -116,8 +126,8 @@ nav ul li a:hover {
 .rooms-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
+  gap: 20px;
 }
 
 .rooms-gallery img {
@@ -146,11 +156,29 @@ nav ul li a:hover {
   font-size: 36px;
   margin-bottom: 30px;
 }
+.section-restaurant div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.back-button {
+  background-color: #ffd700;
+  color: black;
+  padding: 15px 30px;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  position: fixed;
+  z-index: 1000;
+}
 
 .section-restaurant img {
   width: 100%;
   max-width: 450px;
-  margin-bottom: 20px;
   border-radius: 15px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -165,6 +193,9 @@ nav ul li a:hover {
   background-color: #121212;
   padding: 60px 20px;
   text-align: center;
+}
+.sabagiro h2 {
+  margin-bottom: 40px;
 }
 
 .sabagiro iframe {
@@ -214,6 +245,7 @@ nav ul li a:hover {
 }
 
 .pool-prices {
+  margin-top: 50px;
   display: flex;
   gap: 40px;
   justify-content: center;
@@ -221,7 +253,8 @@ nav ul li a:hover {
 }
 
 .pool-item {
-  width: 320px;
+  max-width: 1200px;
+  width: 100%;
   background-color: #121212;
   padding: 30px;
   border-radius: 15px;
@@ -286,21 +319,16 @@ footer p a {
   font-weight: bold;
 }
 
-footer p a:hover {
-  color: black;
+.pool-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
   nav ul li {
     display: block;
     margin: 10px 0;
-  }
-
-  .rooms-gallery {
-    flex-direction: column;
-  }
-
-  .pool-prices {
-    flex-direction: column;
   }
 }
