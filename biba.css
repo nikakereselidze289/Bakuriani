@@ -1,0 +1,200 @@
+/* საერთო სტილები */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.intro-button {
+  padding: 20px 40px;
+  font-size: 20px;
+  background-color: #ffd700;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* კონტეინერი */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("https://netgazeti.ge/wp-content/uploads/2023/07/Untitled-design-2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffcc00;
+  text-align: center;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  animation: slideIn 1s ease-out;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 2s ease-in-out 0.5s;
+}
+
+/* "ჩვენს შესახებ" სექცია */
+.about {
+  background-color: #111;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00ffff;
+}
+
+.about p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #ddd;
+  transition: color 0.3s ease-in-out;
+}
+
+.about p:hover {
+  color: #ffcc00;
+}
+
+/* "ფოტო გალერია" სექცია */
+.gallery {
+  background-color: #222;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00ffff;
+}
+
+.gallery-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery-item {
+  flex: 1;
+  min-width: 300px;
+  max-width: 33%;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(255, 204, 0, 0.8);
+}
+
+/* "კონტაქტი" სექცია */
+.contact {
+  background-color: #121212;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+.contact p,
+.contact address {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #b0c4de;
+}
+
+.contact a {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact a:hover {
+  color: #ffcc00;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #00ffff;
+  transition: color 0.3s ease-in-out;
+}
+
+footer p:hover {
+  color: #ffcc00;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
