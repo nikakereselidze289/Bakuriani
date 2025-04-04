@@ -23,6 +23,7 @@ header {
 header .logo img {
   width: 220px;
   border-radius: 15px;
+  /* 0.3 წამი  ease ეფექტით, რაც უზრუნველყოფს ტრანზიციის ნაკლებად მკვეთრ და უფრო ბუნებრივ ცვლილებას. */
   transition: transform 0.3s ease-in-out;
   padding: 10px;
   border: 3px solid #ffd700;
@@ -301,7 +302,7 @@ footer {
   padding: 20px;
   text-align: center;
 }
-
+/* footer */
 footer p {
   font-size: 18px;
 }

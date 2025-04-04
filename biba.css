@@ -29,7 +29,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background-image: url("https://netgazeti.ge/wp-content/uploads/2023/07/Untitled-design-2.jpg");
+  background-image: url("https://images3.alphacoders.com/109/thumb-1920-1095677.jpg");
   background-size: cover;
   background-position: center;
   height: 60vh;
@@ -112,6 +112,7 @@ body {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  /* 0.3 წამი  ease ეფექტით, რაც უზრუნველყოფს ტრანზიციის ნაკლებად მკვეთრ და უფრო ბუნებრივ ცვლილებას. */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
