@@ -1,0 +1,96 @@
+/* ყველა ელემენტისთვის მარგინისა და პედინგის 0-seti და box-sizing-ის ჩასმა */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+  /* ძირითადი სხეულის სტილი */
+    body {
+    font-family: "Roboto", sans-serif;
+    background-color: #121212;
+    color: aqua;
+    line-height: 1.6;
+    padding: 30px 20px;
+    }
+    
+  /* wrapper-ის სტილი */
+    .div1 {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+    
+  /* სათაური */
+    h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #ffd700;
+    }
+    
+  /* ქვეთაურები */
+    h3 {
+    margin-top: 40px;
+    font-size: 28px;
+    color: #ffd700;
+    }
+    
+  /* ფოტოები */
+    #img1,
+    #img2,
+    #img3 {
+    display: block;
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    }
+    
+    #img1:hover,
+    #img2:hover,
+    #img3:hover {
+    transform: scale(1.05);
+    }
+    
+ /* ტექსტი */
+    #i1,
+    #i2,
+    #i3 {
+    display: block;
+    font-size: 18px;
+    color: #bbb;
+    margin-top: 10px;
+    text-align: justify;
+    padding: 0 10px;
+    }
+    
+  /* ლინკი მთავარი გვერდზე */
+    .div2 {
+    margin-top: 40px;
+    text-align: center;
+    }
+    
+  /* ბმულის სტილი */
+    #a1 {
+    background-color: #ffd700;
+    color: black;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    
+    #a1:hover {
+    background-color: aqua;
+    color: black;
+    transform: scale(1.05);
+    }
+    

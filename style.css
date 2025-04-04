@@ -64,11 +64,11 @@ nav ul li a:hover {
 
 .section-home {
   text-align: center;
-  background-image: url("high-quality-home-bg.jpg");
+  background-image: url("https://www.wallpapergap.com/cdn/24/519/dark-winter-background-wallpaper-2560x1514.jpg");
   background-size: cover;
   background-position: center;
   padding: 100px 20px;
-  color: black;
+  color: aqua;
   background-blur: 10px;
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.7);
 }

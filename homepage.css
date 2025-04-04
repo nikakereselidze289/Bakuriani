@@ -1,0 +1,114 @@
+
+body {
+  background-size: cover; 
+  background-color: #0a0a0a; 
+  font-family: Arial, sans-serif; 
+}
+
+.div1 {
+  display: flex; 
+  justify-content: space-between; 
+  margin: 0 200px; 
+  color: black; 
+  position: relative; 
+}
+
+/* ჰოვერის ეფექტი h2 */
+h2:hover {
+  background-color: red; 
+}
+
+/* ყველა ლინკის სტილიზაცია */
+a {
+  text-decoration: none; 
+  color: aqua; 
+}
+
+#img1 {
+  position: absolute; 
+  bottom: 40%; 
+  left: 10px; 
+  border: solid; 
+  border-radius: 100px; 
+  height: 250px; 
+  width: auto; 
+}
+
+/* მეორე სურათის სტილიზაცია */
+#img2 {
+  position: absolute;
+  bottom: 40%; 
+  right: 20px; /* მარჯვენა მარგინი */
+  border: solid;
+  border-radius: 100px;
+  height: 265px;
+  width: auto;
+}
+
+/* მესამე სურათის სტილიზაცია */
+#img3 {
+  position: absolute;
+  top: 70%; /* სურათის განლაგება ეკრანის ზედა ნაწილში */
+  left: 10px;
+  border: solid;
+  border-radius: 100px;
+  height: 250px;
+  width: auto;
+}
+
+/* მეოთხე სურათის სტილიზაცია */
+#img4 {
+  position: absolute;
+  top: 70%;
+  right: 20px;
+  width: auto;
+  height: 250px;
+  border: solid;
+  border-radius: 100px;
+}
+
+/* ბმულის (back button) სტილიზაცია */
+#a1 {
+  display: flex;
+  justify-content: center; /* ბმულის ცენტრში განლაგება */
+  background-color: #ffd700; /* ფონური ფერი ყვითელი */
+  color: black; /* ტექსტის ფერი */
+  padding: 15px 30px; /* Padding - შიდა მანძილი */
+  font-size: 20px; /* ტექსტის ზომა */
+  text-decoration: none; /* ლინკის ხაზქვეშა ხაზის ამოღება */
+  border-radius: 5px; /* გარღვეული კიდეები */
+  transition: background-color 0.3s; /* ფონური ფერის ცვლილება ზუსტად 0.3 წამში */
+}
+
+#a1:hover {
+  background-color: black; /* ფონური ფერი იცვლება შავზე */
+  color: #ffd700; /* ტექსტის ფერი შეიცვლება ყვითელზე */
+}
+
+/* ლისტის ელემენტების სტილიზაცია */
+li {
+  list-style: none; /* ლისტის სიმბოლოები ამოიღება */
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center; /* ელემენტების ცენტრში განლაგება */
+  align-items: center;
+  flex-wrap: wrap; /* ელემენტების გადატანა შემდეგ ხაზზე */
+}
+
+/* ლინკის სტილიზაცია ლისტის შიგნით */
+ul li a {
+  color: #ffd700; /* ლინკის ყვითელი ფერი */
+  text-decoration: none; /* ხაზქვეშა ხაზის ამოღება */
+  font-size: 20px; /* ტექსტის ზომა */
+  text-transform: uppercase; /* ლათინური ასოების დიდი ფორმა */
+  letter-spacing: 1px; /* ასოებს შორის გასავალი */
+  transition: color 0.3s ease, transform 0.3s ease; /* ცვლილების მუხტი */
+}
+
+/* ლინკის ჰოვერის ეფექტი */
+li a:hover {
+  color: aqua; /* ტექსტის ფერი იცვლება აეკვას ფერით */
+  text-decoration: underline; /* ხაზქვეშა ხაზის დამატება */
+  transform: scale(1.1); /* ზომის გადიდება */
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>სასტუმროს დაჯავშნა</title>
+    <!--css-->
+    <link rel="stylesheet" href="booking.css" />
+  </head>
+  <body>
+    <!-- ფორმის საერთო კონტეინერი -->
+    <div class="container">
+      <h1>სასტუმროს დაჯავშნა</h1>
+
+      <!-- დაჯავშნის ფორმა -->
+      <form>
+        <!-- სახელის ველი -->
+        <label for="name">თქვენი სახელი:</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="შეიყვანეთ თქვენი სახელი"
+          required />
+
+        <!-- ელფოსტის ველი -->
+        <label for="email">ელფოსტა:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="შეიყვანეთ ელფოსტა"
+          required />
+
+        <!-- ჩასვლის თარიღი -->
+        <label for="checkInDate">ჩასვლის თარიღი:</label>
+        <input type="date" id="checkInDate" required />
+
+        <!-- გამგზავრების თარიღი -->
+        <label for="checkOutDate">გამგზავრების თარიღი:</label>
+        <input type="date" id="checkOutDate" required />
+
+        <!-- გაგზავნის ღილაკი -->
+        <button type="submit">შემდეგი</button>
+      </form>
+
+      <!-- დადასტურების შეტყობინება -->
+      <div id="confirmation" class="hidden">
+        <h2>თქვენი დაჯავშნის დეტალები</h2>
+        <p>ჩასვლის თარიღი: <span id="checkInDetails"></span></p>
+        <p>გამგზავრების თარიღი: <span id="checkOutDetails"></span></p>
+        <p>ღამეების რაოდენობა: <span id="nightsDetails"></span></p>
+        <button>დაჯავშნე სასტუმრო</button>
+      </div>
+
+      <br />
+      <br />
+      <div class="div2">
+        <a id="a1" href="homepage.html">დაბრუნება მთავარ გვერდზე</a>
+      </div>
+    </div>
+  </body>
+</html>
