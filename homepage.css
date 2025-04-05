@@ -5,10 +5,17 @@ body {
 }
 /*first div block styling*/
 .div1 {
-  display: flex;
-  justify-content: space-between;
-  margin: 0px 200px;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0px auto;
   color: black;
+}
+.div1_menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 /*change color when hovered*/
 h2:hover {
@@ -20,47 +27,9 @@ a {
   color: aqua;
 }
 /*first img*/
-#img1 {
-  position: absolute;
-  bottom: 40%;
-  left: 10px;
-  border: solid;
-  border-radius: 100px;
-  height: 250px;
-}
-/*second img*/
-#img2 {
-  position: absolute;
-  bottom: 40%;
-  right: 20px;
-  border: solid;
-  border-radius: 100px;
-  height: 265px;
-  width: 500px;
-}
-/*third img*/
-#img3 {
-  height: 250px;
-  position: absolute;
-  top: 70%;
-  left: 10px;
-  border: solid;
-  border-radius: 100px;
-}
-/*fourth img*/
-#img4 {
-  height: 250px;
-  position: absolute;
-  top: 70%;
-  right: 20px;
-  width: 500px;
-  border: solid;
-  border-radius: 100px;
-}
-
 #a1 {
-    display: flex;
-    justify-content: center; 
+  display: flex;
+  justify-content: center;
 
   background-color: #ffd700;
   color: black;
@@ -72,4 +41,32 @@ a {
 }
 */ #a1:hover {
   background-color: black;
+}
+
+.img_home {
+  height: 300px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 40px;
+}
+
+.div_img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.div_main_img {
+  max-width: 1400px;
+  width: 100%;
+  margin: 100px auto;
+}
+
+@media only screen and (max-width: 1250px) {
+  .div_img {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
